@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import {Link} from 'react-router-dom';
 
-class Header extends Component{
+class Extra extends Component{
   render(){
     return(
-      <header className="App-header">
+      <header className="App-header" style={{background:'#753a89'}}>
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
           Universidad De Guadalajara
@@ -20,14 +19,11 @@ class Header extends Component{
           target="_blank"
           rel="noopener noreferrer"
         >
-          Repo
+          Esta Es Una Pagina Extra
         </a>
-        <Link to="/extra">
-          Extra Pagina Intranet
-        </Link>
       </header>
     );
   }
 }
 
-export default Header;
+export default Extra;

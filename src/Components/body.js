@@ -78,11 +78,10 @@ class Body extends Component{
             </div>
             <div class="card">
                 <div class="card-header">
-                    Creadores
+                    Creador
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Valentine Alejandro Ruiz Ortiz</h5>
-                    <h5 class="card-title">Kevin Kristop Morales Barranco</h5>
                 </div>
             </div>
         </div>

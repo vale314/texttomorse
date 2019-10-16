@@ -1,22 +1,23 @@
 import React, {Component} from 'react';
-import Header from './Components/header'
-import Body from './Components/body'
+
+import ReactDOM from 'react-dom'
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 
 import './App.css';
+import Home from './pages/home';
+import Extra from './pages/extra';
 
 class App extends Component{
   render(){
     return(
-      <div className="App">
-        <nav class="navbar navbar-light bg-light sticky-top">
-          <a class="navbar-brand" href="https://github.com/vale314/Algoritmia/tree/master/Morse" target="_blank">
-            <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""/>
-            Convertidor de Texto
-          </a>
-        </nav>
-        <Header/>
-        <Body/>
-      </div>
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/extra" component={Extra} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
